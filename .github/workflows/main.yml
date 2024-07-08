@@ -1,7 +1,5 @@
 on: 
-  push: 
-    branches:
-      - master
+  push
   schedule:
     - cron: "0 2 * * 1-5"
 
