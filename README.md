@@ -7,6 +7,8 @@ It is pretty easy to use, you just select "start activation" and select what edi
 
 It is built in .NET 8 but my releases are self-contained executables that bundle the .net runtime in them.
 
+![Screenshot of activator.exe running. You can see the edition selector next to the main window.](.github/src/screenshot1.png)
+
 ## Support
 It supports these versions:
 
