@@ -29,61 +29,103 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            button1 = new Button();
-            label1 = new Label();
             label2 = new Label();
-            advanced = new Button();
+            button1 = new Button();
+            label5 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            windowsBtn = new Button();
+            officeBtn = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.Location = new Point(12, 104);
-            button1.Name = "button1";
-            button1.Size = new Size(268, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Start Activation";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
-            // label1
-            // 
-            label1.Location = new Point(12, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(545, 54);
-            label1.TabIndex = 3;
-            label1.Text = resources.GetString("label1.Text");
             // 
             // label2
             // 
-            label2.Location = new Point(12, 154);
+            label2.Location = new Point(21, 197);
             label2.Name = "label2";
-            label2.Size = new Size(545, 17);
+            label2.Size = new Size(348, 17);
             label2.TabIndex = 6;
             label2.Text = "(C) Copyright 2024 Ben Daws. Open-source via GNU GPL 3.0";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // advanced
+            // button1
             // 
-            advanced.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            advanced.Location = new Point(286, 104);
-            advanced.Name = "advanced";
-            advanced.Size = new Size(271, 23);
-            advanced.TabIndex = 7;
-            advanced.Text = "Advanced..";
-            advanced.UseVisualStyleBackColor = true;
-            advanced.Click += advanced_Click;
+            button1.Anchor = AnchorStyles.None;
+            button1.BackColor = Color.Red;
+            button1.BackgroundImageLayout = ImageLayout.None;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.ForeColor = SystemColors.ButtonFace;
+            button1.Location = new Point(327, -3);
+            button1.Name = "button1";
+            button1.Size = new Size(57, 23);
+            button1.TabIndex = 46;
+            button1.Text = "X";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(155, 5);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 15);
+            label5.TabIndex = 45;
+            label5.Text = "MSActivate";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(244, 30);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(115, 115);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 47;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(21, 30);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(115, 115);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 48;
+            pictureBox2.TabStop = false;
+            // 
+            // windowsBtn
+            // 
+            windowsBtn.Location = new Point(21, 161);
+            windowsBtn.Name = "windowsBtn";
+            windowsBtn.Size = new Size(115, 23);
+            windowsBtn.TabIndex = 49;
+            windowsBtn.Text = "Windows";
+            windowsBtn.UseVisualStyleBackColor = true;
+            windowsBtn.Click += windowsBtn_Click;
+            // 
+            // officeBtn
+            // 
+            officeBtn.Location = new Point(244, 161);
+            officeBtn.Name = "officeBtn";
+            officeBtn.Size = new Size(115, 23);
+            officeBtn.TabIndex = 50;
+            officeBtn.Text = "Office";
+            officeBtn.UseVisualStyleBackColor = true;
+            officeBtn.Click += officeBtn_Click;
             // 
             // MainWindow
             // 
-            AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(569, 183);
-            Controls.Add(advanced);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            ClientSize = new Size(381, 223);
+            Controls.Add(officeBtn);
+            Controls.Add(windowsBtn);
+            Controls.Add(pictureBox2);
+            Controls.Add(pictureBox1);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Controls.Add(label5);
+            Controls.Add(label2);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
@@ -91,13 +133,19 @@
             ShowIcon = false;
             Text = "MSActivator";
             Load += MainWindow_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-        private Button button1;
-        private Label label1;
         private Label label2;
-        private Button advanced;
+        private Button button1;
+        private Label label5;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private Button windowsBtn;
+        private Button officeBtn;
     }
 }
