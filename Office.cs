@@ -57,6 +57,7 @@ namespace activator
         {
             string ProductKey = kms_KEY_VALUE.Text;
             string InstallDirc = installDir.Text;
+            string InstallPort = customKMS_value.Text;
 
             string batFileName = InstallDirc + @"\" + Guid.NewGuid() + ".bat";
 
@@ -67,7 +68,7 @@ namespace activator
                 batFile.WriteLine($"cscript ospp.vbs /setprt:1688");
                 batFile.WriteLine($"cscript ospp.vbs /unpkey:6F7TH >nul");
                 batFile.WriteLine($"cscript ospp.vbs /inpkey:FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH");
-                batFile.WriteLine($"cscript ospp.vbs /sethst:107.175.77.7");
+                batFile.WriteLine($"cscript ospp.vbs /sethst:" + InstallPort);
                 batFile.WriteLine($"cscript ospp.vbs /act");
             }
 
