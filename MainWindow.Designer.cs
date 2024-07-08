@@ -29,78 +29,75 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            pictureBox1 = new PictureBox();
-            progressBar1 = new ProgressBar();
             button1 = new Button();
-            ProgressBar = new ProgressBar();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label1 = new Label();
+            label2 = new Label();
+            advanced = new Button();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(518, 100);
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.WaitOnLoad = true;
-            // 
-            // progressBar1
-            // 
-            progressBar1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            progressBar1.ForeColor = Color.DarkOrchid;
-            progressBar1.Location = new Point(12, 149);
-            progressBar1.Name = "progressBar1";
-            progressBar1.Size = new Size(495, 0);
-            progressBar1.TabIndex = 1;
             // 
             // button1
             // 
             button1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            button1.Location = new Point(12, 120);
+            button1.Location = new Point(12, 104);
             button1.Name = "button1";
-            button1.Size = new Size(495, 23);
+            button1.Size = new Size(268, 23);
             button1.TabIndex = 2;
             button1.Text = "Start Activation";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // ProgressBar
+            // label1
             // 
-            ProgressBar.Location = new Point(12, 155);
-            ProgressBar.Name = "ProgressBar";
-            ProgressBar.Size = new Size(495, 23);
-            ProgressBar.TabIndex = 3;
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(545, 54);
+            label1.TabIndex = 3;
+            label1.Text = resources.GetString("label1.Text");
+            // 
+            // label2
+            // 
+            label2.Location = new Point(12, 154);
+            label2.Name = "label2";
+            label2.Size = new Size(545, 17);
+            label2.TabIndex = 6;
+            label2.Text = "(C) Copyright 2024 Ben Daws. Open-source via GNU GPL 3.0";
+            // 
+            // advanced
+            // 
+            advanced.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            advanced.Location = new Point(286, 104);
+            advanced.Name = "advanced";
+            advanced.Size = new Size(271, 23);
+            advanced.TabIndex = 7;
+            advanced.Text = "Advanced..";
+            advanced.UseVisualStyleBackColor = true;
+            advanced.Click += advanced_Click;
             // 
             // MainWindow
             // 
             AcceptButton = button1;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(519, 186);
-            Controls.Add(ProgressBar);
+            ClientSize = new Size(569, 183);
+            Controls.Add(advanced);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(button1);
-            Controls.Add(progressBar1);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "MainWindow";
             ShowIcon = false;
-            Text = "activator.exe";
+            Text = "MSActivator";
             Load += MainWindow_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
-        private ProgressBar progressBar1;
         private Button button1;
-        private ProgressBar ProgressBar;
+        private Label label1;
+        private Label label2;
+        private Button advanced;
     }
 }
