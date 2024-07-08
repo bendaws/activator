@@ -16,7 +16,7 @@ namespace activator
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {       
+        {
             ChooseEdition editionWindow = new ChooseEdition();
             editionWindow.ShowDialog();
 
@@ -52,7 +52,8 @@ namespace activator
                 {
                     productKey = "NPPR9-FWDCX-D2C8J-H872K-2YT43";
                 }
-            } else
+            }
+            else
             {
                 MessageBox.Show(
                     "No edition was selected.",
@@ -97,6 +98,12 @@ namespace activator
             );
 
             Application.Exit();
+        }
+
+        private void advanced_Click(object sender, EventArgs e)
+        {
+            Advanced newAdv = new Advanced();
+            newAdv.Show();
         }
     }
 }
