@@ -105,5 +105,22 @@ namespace activator
             Advanced newAdv = new Advanced();
             newAdv.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void windowsBtn_Click(object sender, EventArgs e)
+        {
+            Advanced windows = new Advanced();
+            windows.Show();
+        }
+
+        private void officeBtn_Click(object sender, EventArgs e)
+        {
+            Office office = new Office();
+            office.Show();
+        }
     }
 }
