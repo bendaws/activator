@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: .NET Build
-    uses: EasyDesk/action-dotnet-build@1.0.0
+    uses: build.yml
     with:
       build-args: -r win-x64 -p:PublishSingleFile=true --self-contained true 
       build-configuration: Release
