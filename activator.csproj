@@ -28,4 +28,8 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="PastebinAPI" Version="1.1.1" />
+  </ItemGroup>
+
 </Project>
