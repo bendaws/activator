@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advanced));
             label2 = new Label();
             customKMS = new CheckBox();
             customKMS_value = new TextBox();
@@ -44,12 +45,13 @@
             startActivation = new Button();
             cancel = new Button();
             label3 = new Label();
+            label6 = new Label();
             SuspendLayout();
             // 
             // label2
             // 
             label2.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            label2.Location = new Point(12, 400);
+            label2.Location = new Point(12, 355);
             label2.Name = "label2";
             label2.Size = new Size(631, 17);
             label2.TabIndex = 7;
@@ -58,7 +60,7 @@
             // customKMS
             // 
             customKMS.AutoSize = true;
-            customKMS.Location = new Point(12, 12);
+            customKMS.Location = new Point(12, 75);
             customKMS.Name = "customKMS";
             customKMS.Size = new Size(161, 19);
             customKMS.TabIndex = 8;
@@ -69,7 +71,7 @@
             // customKMS_value
             // 
             customKMS_value.Enabled = false;
-            customKMS_value.Location = new Point(179, 10);
+            customKMS_value.Location = new Point(179, 73);
             customKMS_value.Name = "customKMS_value";
             customKMS_value.Size = new Size(389, 23);
             customKMS_value.TabIndex = 9;
@@ -77,7 +79,7 @@
             // 
             // kms_KEY_VALUE
             // 
-            kms_KEY_VALUE.Location = new Point(92, 39);
+            kms_KEY_VALUE.Location = new Point(92, 102);
             kms_KEY_VALUE.Name = "kms_KEY_VALUE";
             kms_KEY_VALUE.Size = new Size(476, 23);
             kms_KEY_VALUE.TabIndex = 11;
@@ -85,7 +87,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(12, 74);
+            label1.Location = new Point(12, 137);
             label1.Name = "label1";
             label1.Size = new Size(156, 15);
             label1.TabIndex = 13;
@@ -93,7 +95,7 @@
             // 
             // ProBtn
             // 
-            ProBtn.Location = new Point(26, 131);
+            ProBtn.Location = new Point(26, 194);
             ProBtn.Name = "ProBtn";
             ProBtn.Size = new Size(142, 23);
             ProBtn.TabIndex = 14;
@@ -103,7 +105,7 @@
             // 
             // homeBtn
             // 
-            homeBtn.Location = new Point(26, 102);
+            homeBtn.Location = new Point(26, 165);
             homeBtn.Name = "homeBtn";
             homeBtn.Size = new Size(142, 23);
             homeBtn.TabIndex = 12;
@@ -113,7 +115,7 @@
             // 
             // EnterpriseBtn
             // 
-            EnterpriseBtn.Location = new Point(26, 160);
+            EnterpriseBtn.Location = new Point(26, 223);
             EnterpriseBtn.Name = "EnterpriseBtn";
             EnterpriseBtn.Size = new Size(142, 23);
             EnterpriseBtn.TabIndex = 15;
@@ -123,7 +125,7 @@
             // 
             // enterprise10Btn
             // 
-            enterprise10Btn.Location = new Point(193, 160);
+            enterprise10Btn.Location = new Point(193, 223);
             enterprise10Btn.Name = "enterprise10Btn";
             enterprise10Btn.Size = new Size(142, 23);
             enterprise10Btn.TabIndex = 18;
@@ -133,7 +135,7 @@
             // 
             // pro10Btn
             // 
-            pro10Btn.Location = new Point(193, 131);
+            pro10Btn.Location = new Point(193, 194);
             pro10Btn.Name = "pro10Btn";
             pro10Btn.Size = new Size(142, 23);
             pro10Btn.TabIndex = 17;
@@ -143,7 +145,7 @@
             // 
             // home10Btn
             // 
-            home10Btn.Location = new Point(193, 102);
+            home10Btn.Location = new Point(193, 165);
             home10Btn.Name = "home10Btn";
             home10Btn.Size = new Size(142, 23);
             home10Btn.TabIndex = 16;
@@ -154,7 +156,7 @@
             // fullActivation
             // 
             fullActivation.AutoSize = true;
-            fullActivation.Location = new Point(12, 208);
+            fullActivation.Location = new Point(12, 271);
             fullActivation.Name = "fullActivation";
             fullActivation.Size = new Size(328, 19);
             fullActivation.TabIndex = 19;
@@ -166,7 +168,7 @@
             // limitedActivation
             // 
             limitedActivation.AutoSize = true;
-            limitedActivation.Location = new Point(12, 233);
+            limitedActivation.Location = new Point(12, 296);
             limitedActivation.Name = "limitedActivation";
             limitedActivation.Size = new Size(357, 19);
             limitedActivation.TabIndex = 20;
@@ -176,7 +178,7 @@
             // 
             // startActivation
             // 
-            startActivation.Location = new Point(415, 365);
+            startActivation.Location = new Point(415, 321);
             startActivation.Name = "startActivation";
             startActivation.Size = new Size(153, 23);
             startActivation.TabIndex = 21;
@@ -186,7 +188,7 @@
             // 
             // cancel
             // 
-            cancel.Location = new Point(314, 365);
+            cancel.Location = new Point(315, 321);
             cancel.Name = "cancel";
             cancel.Size = new Size(90, 23);
             cancel.TabIndex = 22;
@@ -197,19 +199,28 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 42);
+            label3.Location = new Point(12, 105);
             label3.Name = "label3";
             label3.Size = new Size(74, 15);
             label3.TabIndex = 23;
             label3.Text = "Product Key:";
+            // 
+            // label6
+            // 
+            label6.Location = new Point(12, 9);
+            label6.Name = "label6";
+            label6.Size = new Size(560, 49);
+            label6.TabIndex = 47;
+            label6.Text = resources.GetString("label6.Text");
             // 
             // Advanced
             // 
             AcceptButton = startActivation;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            CancelButton = startActivation;
-            ClientSize = new Size(580, 426);
+            CancelButton = cancel;
+            ClientSize = new Size(580, 381);
+            Controls.Add(label6);
             Controls.Add(label3);
             Controls.Add(cancel);
             Controls.Add(startActivation);
@@ -226,9 +237,13 @@
             Controls.Add(customKMS_value);
             Controls.Add(customKMS);
             Controls.Add(label2);
-            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Advanced";
-            Text = "MSActivator (advanced)";
+            ShowIcon = false;
+            ShowInTaskbar = false;
+            Text = "MSActivator (windows)";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -251,5 +266,6 @@
         private Button startActivation;
         private Button cancel;
         private Label label3;
+        private Label label6;
     }
 }
