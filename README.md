@@ -1,5 +1,9 @@
-# MSActivate ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/bendaws/activator) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/bendaws/activator) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/bendaws/activator/total)
-MSActivate is a simple and free way to activate Microsoft products (being Windows 10/11 or Office) by using the KMS servers provided by [msguides.com](https://msguides.com).
+# activator ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/bendaws/activator) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/bendaws/activator) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/bendaws/activator/total)
+
+> [!NOTE]
+> I have mostly stopped development of MSActivator, but I still keep watch for security updates and bug fixing builds. Development pauses after Windows releases come out, but I will continue to update it when Windows 12 (or next version) is released.
+
+MSActivator is a simple and free way to activate Microsoft products (being Windows 10/11 or Office) by using the KMS servers provided by [msguides.com](https://msguides.com).
 It is essentially a wrapper over the activation process. MSActivate will automatically install the KMS server with a key, and activate it for you.
 
 It is built in .NET 8 but my releases are self-contained executables that bundle the .net runtime in them.
