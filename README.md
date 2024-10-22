@@ -1,8 +1,5 @@
 # activator ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/bendaws/activator) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/bendaws/activator) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/bendaws/activator/total)
 
-> [!NOTE]
-> I have mostly stopped development of MSActivator, but I still keep watch for security updates and bug fixing builds. Development pauses after Windows releases come out, but I will continue to update it when Windows 12 (or next version) is released.
-
 MSActivator is a simple and free way to activate Microsoft products (being Windows 10/11 or Office) by using the KMS servers provided by [msguides.com](https://msguides.com).
 It is essentially a wrapper over the activation process. MSActivate will automatically install the KMS server with a key, and activate it for you.
 
@@ -23,5 +20,5 @@ It offically supports these versions:
 - Office
   - Office 2021
 
-If your version or edition is not listed, versions [1.1.0](https://github.com/bendaws/activator/releases/tag/1.1.0) and above support advanced activation, in which you can insert your own product key.
+If your version or edition is not listed, versions [1.1.0](https://github.com/bizrd/activator/releases/tag/1.1.0) and above support advanced activation, in which you can insert your own product key.
 Read the articles on [msguides.com](https://msguides.com) for product keys.
