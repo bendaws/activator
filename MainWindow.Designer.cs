@@ -46,7 +46,7 @@
             label2.Name = "label2";
             label2.Size = new Size(348, 17);
             label2.TabIndex = 6;
-            label2.Text = "(C) Copyright 2024 Ben Daws. Open-source via GNU GPL 3.0";
+            label2.Text = "(C) 2024 GeoPCVR. https://github.com/geopcvr/activator";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // button1
